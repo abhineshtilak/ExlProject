@@ -40,3 +40,43 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+/* _____________________Header__________________ */
+
+
+/* Profile section to show logout button on hover */
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.logout-button {
+  display: none; /* Hide the logout button by default */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 5px;
+}
+
+.profile-container:hover .logout-button {
+  display: block; /* Show logout button on hover */
+}
+
+/* Round profile image and login button */
+.profile-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.login-button {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff; /* Make border white to create a rounded effect */
+}
